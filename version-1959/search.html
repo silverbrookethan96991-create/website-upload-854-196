@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>影片搜索-经典电影大全-经典影片合集-高清电影在线观看</title>
+  <meta name="description" content="搜索经典电影大全中的影片标题、类型、地区、年份和标签，快速找到想看的高清电影。">
+  <meta name="keywords" content="经典电影大全,经典影片,高清电影,电影合集,高分电影,电影推荐,影片搜索,电影搜索">
+  <link rel="stylesheet" href="./assets/style.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="site-logo" href="./index.html" aria-label="经典电影大全">
+      <span class="logo-mark">影</span>
+      <span class="logo-text">经典电影大全</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+        <a class="nav-link" href="./index.html">首页</a>
+        <a class="nav-link" href="./categories.html">分类</a>
+        <a class="nav-link" href="./ranking.html">排行榜</a>
+        <a class="nav-link" href="./category-classic.html">经典精选</a>
+        <a class="nav-link" href="./category-popular.html">热门推荐</a>
+        <a class="nav-link" href="./category-suspense.html">悬疑犯罪</a>
+    </nav>
+    <form class="nav-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片、类型、标签" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="展开导航" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" data-mobile-nav>
+      <a class="mobile-nav-link" href="./index.html">首页</a>
+      <a class="mobile-nav-link" href="./categories.html">分类</a>
+      <a class="mobile-nav-link" href="./ranking.html">排行榜</a>
+      <a class="mobile-nav-link" href="./category-classic.html">经典精选</a>
+      <a class="mobile-nav-link" href="./category-popular.html">热门推荐</a>
+      <a class="mobile-nav-link" href="./category-suspense.html">悬疑犯罪</a>
+    <form class="mobile-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+<main>
+  <section class="page-hero search-hero">
+    <div class="container">
+      <span class="eyebrow">Search</span>
+      <h1>影片搜索</h1>
+      <p>输入影片名、地区、类型或标签，快速定位相关影片详情。</p>
+      <form class="big-search" action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索经典电影、类型、标签" aria-label="搜索关键词">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container">
+      <div class="search-summary" data-search-summary></div>
+      <div class="movie-grid category-movie-grid" data-search-results></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-logo" href="./index.html">
+        <span class="logo-mark">影</span>
+        <span>经典电影大全</span>
+      </a>
+      <p>汇总经典电影相关内容，覆盖不同年代与类型的影片，页面信息清晰，适合浏览经典片单。</p>
+    </div>
+    <div>
+      <h2>影片分类</h2>
+      <div class="footer-links">
+        <a href="./category-classic.html">经典精选</a><a href="./category-popular.html">热门推荐</a><a href="./category-suspense.html">悬疑犯罪</a><a href="./category-action.html">动作战争</a><a href="./category-drama.html">剧情人生</a><a href="./category-romance.html">爱情家庭</a>
+      </div>
+    </div>
+    <div>
+      <h2>快速入口</h2>
+      <div class="footer-links">
+        <a href="./categories.html">分类总览</a>
+        <a href="./ranking.html">热门榜单</a>
+        <a href="./search.html">影片搜索</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 经典电影大全 · 经典影片合集</div>
+</footer>
+<script src="./assets/site.js"></script>
+<script src="./assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
+

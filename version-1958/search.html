@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>片库搜索-精选日韩影片-精选影片片单-热门片库持续更新</title>
+  <meta name="description" content="搜索精选日韩影片、热门片单、经典影片和持续更新片库。">
+  <meta name="keywords" content="片库搜索,精选日韩影片,日韩影片,精选影片,影片片单,热门片库,高清影片,电影推荐">
+  <link rel="stylesheet" href="./assets/site.css">
+  
+</head>
+<body class="min-h-screen bg-gray-50">
+
+<header class="bg-gradient-to-r from-slate-900 to-slate-800 shadow-lg sticky top-0 z-50">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+      <a href="./index.html" class="flex items-center gap-2 text-xl font-bold text-white hover:text-blue-300 transition-colors" aria-label="精选日韩影片">
+        <span class="site-logo-mark">影</span>
+        <span class="hidden sm:inline">精选日韩影片</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-6">
+        <a href="./index.html" class="transition-colors text-sm text-gray-300 hover:text-white">首页</a><a href="./categories.html" class="transition-colors text-sm text-gray-300 hover:text-white">分类总览</a><a href="./category-asian.html" class="transition-colors text-sm text-gray-300 hover:text-white">日韩精选</a><a href="./category-action.html" class="transition-colors text-sm text-gray-300 hover:text-white">动作冒险</a><a href="./ranking.html" class="transition-colors text-sm text-gray-300 hover:text-white">热门排行</a>
+      </nav>
+      <form class="hidden md:flex items-center gap-2 site-search-form" action="./search.html" method="get">
+        <div class="relative">
+          <input type="search" name="q" placeholder="搜索影片..." class="pl-10 pr-4 py-2 bg-slate-700 border border-slate-600 text-white placeholder-gray-400 rounded-full focus:outline-none focus:border-blue-500 w-48 lg:w-64" autocomplete="off">
+          <span class="search-icon">⌕</span>
+        </div>
+      </form>
+      <button class="lg:hidden text-white site-menu-toggle" type="button" aria-label="展开导航">☰</button>
+    </div>
+    <div class="site-mobile-menu lg:hidden py-4 border-t border-slate-700" hidden>
+      <nav class="flex flex-col gap-4">
+        <a href="./index.html" class="transition-colors text-sm text-gray-300 hover:text-white">首页</a><a href="./categories.html" class="transition-colors text-sm text-gray-300 hover:text-white">分类总览</a><a href="./category-asian.html" class="transition-colors text-sm text-gray-300 hover:text-white">日韩精选</a><a href="./category-action.html" class="transition-colors text-sm text-gray-300 hover:text-white">动作冒险</a><a href="./ranking.html" class="transition-colors text-sm text-gray-300 hover:text-white">热门排行</a>
+        <form class="mt-2 site-search-form" action="./search.html" method="get">
+          <div class="relative">
+            <input type="search" name="q" placeholder="搜索影片..." class="w-full pl-10 pr-4 py-2 bg-slate-700 border border-slate-600 text-white placeholder-gray-400 rounded-full focus:outline-none focus:border-blue-500" autocomplete="off">
+            <span class="search-icon">⌕</span>
+          </div>
+        </form>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white">
+    <div class="container mx-auto px-4 py-16">
+      <nav class="text-sm text-blue-200 mb-4"><a href="./index.html" class="hover:text-white">首页</a><span> / </span><span>片库搜索</span></nav>
+      <h1 class="text-4xl md:text-6xl font-bold mb-5">片库搜索</h1>
+      <p class="text-xl text-gray-200 max-w-3xl">输入影片名、地区、年份、类型或标签，快速查找精选片单内容。</p>
+    </div>
+  </section>
+  <section class="py-10 bg-white border-b border-gray-200">
+    <div class="container mx-auto px-4">
+      <form class="search-page-form" action="./search.html" method="get" data-search-page-form>
+        <input type="search" name="q" data-search-page-input placeholder="搜索影片、年份、类型、标签..." class="w-full pl-6 pr-4 py-4 bg-gray-50 border border-gray-200 rounded-full focus:outline-none focus:border-blue-500 text-lg" autocomplete="off">
+        <button type="submit" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full transition-colors">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div id="search-summary" class="mb-8 text-gray-700"></div>
+      <div id="search-results" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-gradient-to-b from-slate-900 to-slate-950 text-gray-300">
+  <div class="container mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="site-logo-mark">影</span>
+          <span class="text-2xl font-bold text-white">精选日韩影片</span>
+        </div>
+        <p class="text-sm leading-relaxed">精选日韩影片页面整理日韩精选内容，涵盖热门片单、经典影片和持续更新片库。</p>
+      </div>
+      <div>
+        <h2 class="text-white font-semibold mb-4">影片分类</h2>
+        <ul class="space-y-2"><li><a href="./category-featured.html" class="hover:text-blue-400 transition-colors text-sm">精选片单</a></li><li><a href="./category-asian.html" class="hover:text-blue-400 transition-colors text-sm">日韩精选</a></li><li><a href="./category-action.html" class="hover:text-blue-400 transition-colors text-sm">动作冒险</a></li><li><a href="./category-crime.html" class="hover:text-blue-400 transition-colors text-sm">悬疑犯罪</a></li><li><a href="./category-romance.html" class="hover:text-blue-400 transition-colors text-sm">爱情都市</a></li><li><a href="./category-drama.html" class="hover:text-blue-400 transition-colors text-sm">剧情佳作</a></li></ul>
+      </div>
+      <div>
+        <h2 class="text-white font-semibold mb-4">片库导航</h2>
+        <ul class="space-y-2"><li><a href="./index.html" class="hover:text-blue-400 transition-colors text-sm">首页</a></li><li><a href="./categories.html" class="hover:text-blue-400 transition-colors text-sm">分类总览</a></li><li><a href="./ranking.html" class="hover:text-blue-400 transition-colors text-sm">热门排行</a></li><li><a href="./search.html" class="hover:text-blue-400 transition-colors text-sm">片库搜索</a></li></ul>
+      </div>
+      <div>
+        <h2 class="text-white font-semibold mb-4">热门关键词</h2>
+        <p class="text-sm leading-relaxed">精选日韩影片、热门片单、经典影片、高清影片、电影推荐、持续更新片库。</p>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm">
+      <p>© 2026 精选日韩影片 版权所有</p>
+      <p class="mt-2 text-gray-500">精选日韩影片-精选影片片单-热门片库持续更新</p>
+    </div>
+  </div>
+</footer>
+<script src="./assets/app.js"></script>
+<script src="./assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

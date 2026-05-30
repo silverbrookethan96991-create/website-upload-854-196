@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影片搜索-热门日韩影片-热门影片片库-高清视频在线播放</title>
+  <meta name="description" content="热门影片搜索与筛选，支持按片名、题材、地区、类型、年份查找影片。">
+  <meta name="keywords" content="热门日韩影片,日韩影片,热门影片,影片片库,高清播放,精选影片,日韩电影">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="日韩片库">
+      <span class="brand-mark">▶</span>
+      <span class="brand-text">
+        <strong>日韩片库</strong>
+        <small>高清视频在线播放</small>
+      </span>
+    </a>
+    <nav class="site-nav" id="siteNav">
+      <a class="" href="./index.html">首页</a>
+<a class="" href="./categories.html">分类</a>
+<a class="" href="./ranking.html">排行榜</a>
+<a class="is-active" href="./search.html">搜索</a>
+      <span class="nav-dropdown">
+        <button type="button">精选分类</button>
+        <span class="nav-dropdown-menu">
+          <a href="./categories/japan-korea.html">日韩热播</a>
+<a href="./categories/urban-romance.html">都市爱情</a>
+<a href="./categories/mystery-crime.html">悬疑犯罪</a>
+<a href="./categories/action-adventure.html">动作冒险</a>
+<a href="./categories/sci-fi-fantasy.html">科幻奇幻</a>
+<a href="./categories/comedy-healing.html">喜剧治愈</a>
+<a href="./categories/costume-history.html">古装历史</a>
+<a href="./categories/animation.html">动画动漫</a>
+        </span>
+      </span>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片、题材、地区" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="打开导航" aria-controls="siteNav">☰</button>
+  </div>
+</header>
+  
+<main>
+  <section class="page-hero">
+    <div class="page-title">
+      <div class="breadcrumb"><a href="./index.html">首页</a><span>/</span><span>搜索</span></div>
+      <h1>影片搜索与筛选</h1>
+      <p>输入片名、题材、地区或标签，快速定位片库中的影片详情页。</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-inner">
+      <div class="search-shell">
+        <form class="search-grid" data-search-form>
+          <input type="search" name="q" placeholder="搜索影片名称、简介、标签">
+          <select name="region">
+            <option value="">全部地区</option>
+<option value="中国大陆">中国大陆</option>
+<option value="美国">美国</option>
+<option value="日本">日本</option>
+<option value="中国香港">中国香港</option>
+<option value="韩国">韩国</option>
+<option value="英国">英国</option>
+<option value="中国台湾">中国台湾</option>
+<option value="法国">法国</option>
+<option value="中国">中国</option>
+<option value="德国">德国</option>
+<option value="泰国">泰国</option>
+<option value="西班牙">西班牙</option>
+<option value="印度">印度</option>
+<option value="意大利">意大利</option>
+<option value="香港">香港</option>
+<option value="俄罗斯">俄罗斯</option>
+<option value="中国内地">中国内地</option>
+<option value="法国/比利时">法国/比利时</option>
+<option value="美国/英国">美国/英国</option>
+<option value="巴西">巴西</option>
+<option value="澳大利亚">澳大利亚</option>
+<option value="中国香港/中国大陆">中国香港/中国大陆</option>
+<option value="英国/美国">英国/美国</option>
+<option value="法国/德国">法国/德国</option>
+<option value="台湾">台湾</option>
+<option value="瑞典">瑞典</option>
+<option value="阿根廷">阿根廷</option>
+<option value="伊朗">伊朗</option>
+<option value="法国/意大利">法国/意大利</option>
+<option value="美国/加拿大">美国/加拿大</option>
+<option value="荷兰">荷兰</option>
+<option value="挪威">挪威</option>
+<option value="加拿大">加拿大</option>
+<option value="西班牙/墨西哥">西班牙/墨西哥</option>
+<option value="意大利/美国">意大利/美国</option>
+<option value="土耳其">土耳其</option>
+<option value="波兰">波兰</option>
+<option value="华语">华语</option>
+<option value="伊朗/法国">伊朗/法国</option>
+<option value="日本/美国">日本/美国</option>
+<option value="丹麦">丹麦</option>
+<option value="英国/加拿大">英国/加拿大</option>
+<option value="波兰/德国">波兰/德国</option>
+<option value="美国/澳大利亚">美国/澳大利亚</option>
+<option value="南非">南非</option>
+<option value="西班牙/阿根廷">西班牙/阿根廷</option>
+<option value="墨西哥">墨西哥</option>
+<option value="墨西哥/美国">墨西哥/美国</option>
+<option value="斯里兰卡">斯里兰卡</option>
+<option value="美国/中国大陆">美国/中国大陆</option>
+<option value="美国/中国(配音版)">美国/中国(配音版)</option>
+<option value="海地/美国">海地/美国</option>
+<option value="英国/印度">英国/印度</option>
+<option value="芬兰/英国">芬兰/英国</option>
+<option value="法国/加拿大">法国/加拿大</option>
+<option value="美国/意大利">美国/意大利</option>
+<option value="塞内加尔">塞内加尔</option>
+<option value="阿根廷,西班牙">阿根廷,西班牙</option>
+<option value="土耳其/德国">土耳其/德国</option>
+<option value="英国/丹麦">英国/丹麦</option>
+          </select>
+          <select name="type">
+            <option value="">全部类型</option>
+<option value="电影">电影</option>
+<option value="剧集">剧集</option>
+<option value="电视剧">电视剧</option>
+<option value="动画电影">动画电影</option>
+<option value="动画剧集">动画剧集</option>
+<option value="综艺">综艺</option>
+<option value="纪录片">纪录片</option>
+<option value="动画">动画</option>
+<option value="网络剧">网络剧</option>
+<option value="网络电影">网络电影</option>
+<option value="动漫">动漫</option>
+<option value="电影/动画">电影/动画</option>
+<option value="TV剧集">TV剧集</option>
+<option value="脱口秀/单口喜剧">脱口秀/单口喜剧</option>
+<option value="电影 (动画)">电影 (动画)</option>
+<option value="网剧">网剧</option>
+<option value="迷你剧">迷你剧</option>
+<option value="OVA">OVA</option>
+<option value="动画短片">动画短片</option>
+<option value="TV 剧集">TV 剧集</option>
+<option value="TV 动画">TV 动画</option>
+<option value="剧集/限定剧">剧集/限定剧</option>
+<option value="短剧">短剧</option>
+<option value="戏曲电影">戏曲电影</option>
+<option value="综艺/文化">综艺/文化</option>
+<option value="电视剧集">电视剧集</option>
+<option value="电影/网络电影">电影/网络电影</option>
+<option value="电视剧 剧情/青春">电视剧 剧情/青春</option>
+<option value="传记电影">传记电影</option>
+<option value="综艺/真人秀">综艺/真人秀</option>
+<option value="剧集/古装">剧集/古装</option>
+<option value="动画/季播">动画/季播</option>
+<option value="电视剧/网剧">电视剧/网剧</option>
+<option value="单口喜剧">单口喜剧</option>
+<option value="电视剧/网络剧">电视剧/网络剧</option>
+<option value="脱口秀电影">脱口秀电影</option>
+<option value="电影/限制级">电影/限制级</option>
+<option value="剧场版动画">剧场版动画</option>
+<option value="综艺/晚会">综艺/晚会</option>
+<option value="动漫剧集">动漫剧集</option>
+          </select>
+          <select name="year">
+            <option value="">全部年份</option>
+<option value="2029">2029</option>
+<option value="2028">2028</option>
+<option value="2027">2027</option>
+<option value="2026">2026</option>
+<option value="2025">2025</option>
+<option value="2024">2024</option>
+<option value="2023">2023</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+<option value="2016">2016</option>
+<option value="2015">2015</option>
+<option value="2014">2014</option>
+<option value="2013">2013</option>
+<option value="2012">2012</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>
+<option value="2008">2008</option>
+<option value="2007">2007</option>
+<option value="2006">2006</option>
+<option value="2005">2005</option>
+<option value="2004">2004</option>
+<option value="2003">2003</option>
+<option value="2002">2002</option>
+<option value="2001">2001</option>
+<option value="2000">2000</option>
+<option value="1999">1999</option>
+<option value="1998">1998</option>
+<option value="1997">1997</option>
+<option value="1996">1996</option>
+<option value="1995">1995</option>
+<option value="1994">1994</option>
+<option value="1993">1993</option>
+<option value="1992">1992</option>
+<option value="1991">1991</option>
+<option value="1990">1990</option>
+<option value="1989">1989</option>
+<option value="1988">1988</option>
+<option value="1987">1987</option>
+<option value="1986">1986</option>
+<option value="1985">1985</option>
+<option value="1984">1984</option>
+<option value="1983">1983</option>
+<option value="1982">1982</option>
+<option value="1980">1980</option>
+<option value="1979">1979</option>
+<option value="1978">1978</option>
+<option value="1977">1977</option>
+<option value="1976">1976</option>
+<option value="1975">1975</option>
+<option value="1972">1972</option>
+<option value="1970">1970</option>
+<option value="1969">1969</option>
+<option value="1968">1968</option>
+<option value="1965">1965</option>
+<option value="1964">1964</option>
+          </select>
+          <button class="btn btn-primary" type="submit">搜索</button>
+        </form>
+        <p class="search-count" data-search-count></p>
+      </div>
+      <div class="grid movie-grid" data-search-results style="margin-top: 28px;"></div>
+    </div>
+  </section>
+</main>
+  
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="footer-logo" href="./index.html">日韩片库</a>
+      <p>热门日韩影片页面聚合高热度日韩影片，按题材、地区和热度进行整理。</p>
+    </div>
+    <div class="footer-links">
+      <a href="./categories.html">分类总览</a>
+      <a href="./ranking.html">热度排行</a>
+      <a href="./search.html">影片搜索</a>
+      <a href="./categories/japan-korea.html">日韩热播</a> <a href="./categories/urban-romance.html">都市爱情</a> <a href="./categories/mystery-crime.html">悬疑犯罪</a> <a href="./categories/action-adventure.html">动作冒险</a> <a href="./categories/sci-fi-fantasy.html">科幻奇幻</a> <a href="./categories/comedy-healing.html">喜剧治愈</a>
+    </div>
+  </div>
+</footer>
+    <script src="./assets/search-data.js"></script>
+  <script src="./assets/site.js"></script>
+  
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
